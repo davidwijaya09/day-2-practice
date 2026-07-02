@@ -11,13 +11,13 @@ function divide(a, b) {
   return a / b;
 }
 
-// /** Cek bilangan prima. */
-// function isPrime(n) {
-//   if (!Number.isInteger(n) || n < 2) return false;
-//   for (let i = 2; i <= Math.sqrt(n); i++) {
-//     if (n % i === 0) return false;
-//   }
-//   return true;
-// }
+/** Cek bilangan prima. */
+function isPrime(n) {
+  if (!Number.isInteger(n) || n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
 
 module.exports = { add, divide, isPrime };
