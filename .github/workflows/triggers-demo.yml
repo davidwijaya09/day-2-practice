@@ -9,6 +9,7 @@ on:
     paths:
       - 'src/**'
       - 'package.json'
+    tags: ['v*.*.*']  # aktifkan jika ingin push tag juga memicu
 
   # Case C: setiap PR menuju main
   pull_request:
